@@ -1,0 +1,108 @@
+body{
+    background: black;
+    font-family: Book Antiqua;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+    font-family: Book Antiqua;
+    font-size: 2.187em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px rgb(243, 243, 243);
+}
+.clearflix:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+.top-header {
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    text-align: center;
+}
+
+.top-nav ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.top-nav a{
+    color: #f1af09;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.top-nav a:hover{
+    background: #9b781f;
+    transition-duration: 0.4s;
+}
+
+.maps{
+    text-align: center;
+    
+}
+
+.main-content-cardapio{
+    text-align: center;
+}
+
+.rodape{
+    background: #202020;
+    color: #f1af09;
+    text-align: center;
+    padding: 1em;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (min-width: 48.75em){
+    .top-header-logo{
+        float: left;
+    }
+
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 25px;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 5px;
+        
+    }
+
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        letter-spacing: 5px;
+    
+    }
+
+    .maps{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        display: inline-block;
+    }
+}
+
+
