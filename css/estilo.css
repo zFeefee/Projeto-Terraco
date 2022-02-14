@@ -3,9 +3,14 @@ body{
     font-family: Book Antiqua;
     margin: 0;
     padding: 0;
+    
 }
 
-h1{
+p{
+    color:white;
+    font-size: 1.0em;
+}
+h1, h2, h3, h4 {
     color: white;
     font-family: Book Antiqua;
     font-size: 2.187em;
@@ -52,20 +57,49 @@ h1{
     transition-duration: 0.4s;
 }
 
-.maps{
-    text-align: center;
+.main-content-carrosel{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
     
 }
+.main-carrosel{
+    box-shadow: 2px 2px 4px #9b781f;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
 
-.main-content-cardapio{
+}
+.main-container-carrosel{
+    display: flex;
+    transition: transform .5s ease-in-out;
+    transform: translateX(0);
+}
+
+#img{
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+}
+
+.main-content{ 
+    text-align: center
+}
+
+
+.main-content-maps{
     text-align: center;
+    
 }
 
 .rodape{
     background: #202020;
     color: #f1af09;
     text-align: center;
-    padding: 1em;
+    padding: 3em;
 }
 
 
@@ -97,12 +131,103 @@ h1{
     
     }
 
-    .maps{
+    .main-content-carrosel{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        min-height: 100vh;
+        
+    }
+    .main-carrosel{
+        box-shadow: 2px 2px 4px #9b781f;
+        overflow: hidden;
+        height: 700px;
+        width: 700px;
+    
+    }
+    .main-container-carrosel{
+        display: flex;
+        transition: transform .5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    #img{
+        object-fit: cover;
+        height: 700px;
+        width: 700px;
+    }
+
+    .main-content-maps{
         text-align: center;
         width: 100%;
         margin: 0;
         display: inline-block;
     }
+
+
 }
 
+@media screen and (min-width: 62em){
 
+    .top-header-logo{
+        float: left;
+    }
+
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 25px;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 5px;
+        
+    }
+
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        letter-spacing: 5px;
+    
+    }
+
+    .main-content-carrosel{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        min-height: 100vh;
+        
+    }
+    .main-carrosel{
+        box-shadow: 2px 2px 4px #9b781f;
+        overflow: hidden;
+        height: 700px;
+        width: 700px;
+    
+    }
+    .main-container-carrosel{
+        display: flex;
+        transition: transform .5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    #img{
+        object-fit: cover;
+        height: 700px;
+        width: 700px;
+    }
+
+    .main-content-maps{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        display: inline-block;
+    }
+
+}
